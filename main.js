@@ -22,16 +22,16 @@ const app = Vue.createApp({
         }
     },
     computed: {
-        title () {
+        title() {
             return this.brand + " " + this.product
         },
-        image () {
+        image() {
             return this.variants[this.selectedVariant].image
         },
-        inStock () {
+        inStock() {
             return this.variants[this.selectedVariant].quantity
         },
-        onSale () {
+        onSale() {
             if (this.variants[this.selectedVariant].onSale) {
                 return "is on sale"
             }
