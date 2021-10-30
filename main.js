@@ -10,7 +10,7 @@ const app = Vue.createApp({
             this.cart.push(id)
         },
         rfCart(id) {
-            this.cart.pop(id)
+            this.cart.pop(id)//這裡錯了 這樣點到藍襪子的remove也會移除綠襪子
         },
     }
 })
